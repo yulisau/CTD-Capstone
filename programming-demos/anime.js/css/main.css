@@ -1,0 +1,38 @@
+#square-path, #graphic.path {
+  position: relative;
+}
+
+
+.square {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  opacity: 0.6;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.square.pink {
+    background: blue;
+  }
+  
+  .square.orange{
+    background: red;
+  }
+
+  /*code example referenced from codepen example: https://codepen.io/ysaucedo99/pen/KKeadbm*/
+#square-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
