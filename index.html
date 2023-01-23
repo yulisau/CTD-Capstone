@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- 
+@author: Yuliza Saucedo
+Project date: 01/23/2023 - 
+Capstone project 
+javascript library used: anime.js , imported through CDN
+anime.js documentation link: https://animejs.com/documentation/
+ 
+objective: animate something that follows a path, has a flow, or can be manipulated/interacted to have these things. 
+
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo-one-anime.js</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div>
+      <svg height="600" width="600">
+        <!-- svg canvas-->
+        <!-- using motion path, SVG (scalable vector graphic), references: https://www.w3schools.com/graphics/svg_path.asp and https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths and codepen example: https://codepen.io/Shokeen/pen/Ngrjqo-->
+        <path id="graphic-path"
+          d="M100 100 H250 V250 H100 L100 100"
+          stroke="black"
+          stroke-width="1px"
+          fill="none"
+        />
+        <path id="square-path" fill="white" stroke="black" stroke-width="4" d="M300 100 H450 V250 H300 L300 100"/>
+      </svg>
+      <div class="square pink"></div>
+      <div class="square orange"></div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/java.js"></script>
+  </body>
+</html>
